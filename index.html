@@ -17,27 +17,67 @@
       <section class="card" id="html-section">
         <h2>HTML</h2>
         <ul>
+          <li>HTML contains the foundational elements of a web page</li>
+          <li>HTML elements are seperated by a '<..>' beginning and '</..> ending tag</li>
           <li>The Head Element contains information for the browser about the webpage</li>
           <li>The body element represents the visible content shown to the user</li>
-          <li>HTML elements are seperated by a beginning and /ending tag</li>
-          <li>HTML contains the foundational elements of a web page</li>
+          <li>The style elemet defines the CSS styles associated with a website</li>
+          <li>The base element defines the URL for a webpage</li>
+          <li>The link element connects an external resource to the HTML doc</li>
+          <li>The meta element defines metadata such as the character set, description, keywords, author, and viewport.</li>
+          <li>h1, h2, h3, h4, h5, and h6 elements represent levels of heading. *There should only be 1 h1</li>
+          <li>The p element represents a paragraph or block of text.</li>
+          <li>The ul, ol, and li elements represent unordered lists, ordered lists, and list items</li>
+          <li>The ul elements contain unordered or bulleted lists where each list item is tagged with the li element</li>
+          <li>The img element contains information about images that are displaued on the webpage and can contain various elemnts</li>
+          <li>The src attribute is the most important attribute as it defines the location of the image in an img element</li>
+          <li>The br element creates a line of empty space/line break between two blocks of content. *written as <'br /'></li>
+          <li>The a element "Anchor" creates links to a webpage. The href attribute points to the URL for the link</li>
         </ul>
       </section>
    
       <section class="card" id="css-section">
         <h2>CSS</h2>
         <ul>
-          <li>>A margin indicates how much space we want around the outside of an element.</li>
+          <li>CSS is the language used to style the HTML for viewing in browser</li>
+          <li>There are 3 CSS styles to consider when styling HTML: Inline, Internal, and External </li>
+          <li>Inline CSS styles HTML directly in the HTML file.</li>
+          <li>Inline styles apply to a specific HTML tag, using a style attribute with a CSS rule to style a particular page element only</li>
+          <li>Inline Styles are the least flexible of the 3 styles but are useful for quick permanent changes</li>
+          <li>Internal CSS embeds a entire stylesheet directly in the HTML file using a "style" element in the "head" elemet</style></li>
+          <li>Internal CSS rules only apply to page with rules in head element</li>
+          <li>External CSS is most common way to style HTML.</li>
+          <li>External CSS allows developeers to keep all CSS rules in a seperate file, making design easier</li>
+          <li>External CSS uses a "link" element placed in HTML "head" element</li>
+          <li>A margin indicates how much space we want around the outside of an element.</li>
           <li>A padding indicates how much space we want around the content inside an element.</li>
+          <li>Margin is outside the border while padding is inside of border</li>
+          <li>Box-shadow property adds shadow effect around elemnt frame. Set multiple effects seperated by commas. desribed by X and Y offsets in px "pixels", then blur, then color</li>
+          <li>Color can be adde in CSS as semantic "by name", hex #, etc</li>
+          <li>To apply rule to all elements visible on page the wild card "*" symbol is used.</li>
+          <li>To combine multiple selectors into a single CSS rule : Seperate by comma and next line</li>
+          <li>Use class attributes to create groupings ato apply CSS styling to certain elements but not all.</li>
+          <li>The command ."class name" : Designates class selectior.</li>
+
         </ul>
       </section>
    
       <section class="card" id="git-section">
         <h2>Git</h2>
         <ul>
-          <li>git status: checks current branch</li>
-          <li>git checkout -b (branch name): creates a new branch and switches to it </li>
-          <li>git notes cont..</li>
+          <li>The git command must precede every Git statenebt</li>
+          <li>ls : lists files in current folder</li>
+          <li>cd : changes directories. cd .. returns to previous directory</li>
+          <li>pwd ("print working directory") : will print current directory to the terminal</li>
+          <li>git status : checks current branch</li>
+          <li>git checkout Main : returns to main branch</li>
+          <li>git checkout -b (branch name) : creates a new branch and switches to it</li>
+          <li>git add -A : adds all modifications to branch staging area. Where add is the command and -A flag indicates all changes</li>
+          <li>git commit -m "notes" : commits staged files to current branch</li>
+          <li>git pull origin main : pulls main branch from remote to local to ensure they are in sync</li>
+          <li>git push origin "current branch name" : Push local changes to remote Github branch</li>
+          <li>eval "$(ssh-agent -s) : starts the ssh agent. sshe agent stores key for use in git</li>
+          <li>code . : Opens VS code and any file in current directory. The code command just opens VS Code</li>
         </ul>
       </section>
    
@@ -46,8 +86,32 @@
         <ul>
           <li>A variable is a named container that allows us to store data in our code.</li>
           <li>Control flow is the order in which a computer executes code in a script.</li>
-          <li>more notes here..</li>
-
+          <li>To declare a variable in JavaScript we may use the "const" keyword first or let keyword followed by a unique variable and assignemnt operator</li>
+          <li>let allows dev to reassign the value of a variable over time.</li>
+          <li>undefined indicates the absence of a value, while null indicates the absence of an object</li>
+          <li>Null is a keyword but Undefined is a normal indentifier and global property</li>
+          <li>Boolean type represents a logical entity and can be either "true" or "false"</li>
+          <li>NaN = "Not a Number" and is only JS value that is not equal to itself</li>
+          <li>BigInt type is a numeric primitice that can represent integers with arbitrary magnitude.</li>
+          <li>only forbidden operator (+, -, *...) is >>></li>
+          <li>String type represents textual data and is encoded as a sequence of integer values.</li>
+          <li>JavaCript strings are immutable (which means it cannot be modified once created</li>
+          <li>A symbol is a unique and immutable primitive value. Symbols are called "atoms"</li>
+          <li>"console.log("name of argument")" will output the value to the web console</li>
+          <li>When the computer encounters an if statement it will check to see if (condition) is truthy, then carry out {action requested}. If not truthy action is ignored and pc moves on</li>
+          <li>"else if" adds more conditions to if conditions</li>
+          <li>Strict equality operator (===) checks if 2 values are equal and returns boolean result</li>
+          <li>Strings must be contained in "quotation marks"</li>
+          <li>An array contains many items in one location</li>
+          <li>To work with individual objects in an are the location is called using an index starting with 0. (0,1,2,3...)</li>
+          <li>for loop : uses predictable pattern of indices to perform a task on all items in an arry with a single block of code</li>
+          <li>for loop must contain following 3 things: starting point, condition, iteration amount (amount to change by each time)</li>
+          <li>for loops must be broken by another statement such as conditional "if" for control flow to be interrupted</li>
+          <li>for loops require the array length to dignify when complete</li>
+          <li>2 req's for JavaScript funtion: Define the function, Call the function</li>
+          <li>A function's name is followed by parentheses which parameters can be placed inside</li>
+          <li>"Math.floor() and Math.random() are both properties of JS math object and can be used together to create a random number</li>
+          <li>Commenting out code : put "/*" before and "*/" after the block of code</li>
         </ul>
       </section>
     </main>
